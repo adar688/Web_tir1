@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calulator - NativeJS</title>
+    <link rel="stylesheet" href="lib/styles.css" />
+  </head>
+  <body class="dark:text-white light:text-black">
+    <div class="calculator">
+      <div class>
+        <div style="float: left" ><input type="text" class="display" id="display" value="0" disabled></div>
+
+        <div style="clear:both"></div>
+      </div>
+        <div class="buttons">
+
+          <div>
+            <div style="float: left" class="button_num" >7</div>
+            <div style="float: left" class="button_num" >8</div>
+            <div style="float: left" class="button_num" >9</div>
+            <div style="float: left" class="button_op" >/</div>
+            <div style="clear:both"></div>
+          </div>
+
+          <div>
+            <div style="float: left" class="button_num" >4</div>
+            <div style="float: left" class="button_num" >5</div>
+            <div style="float: left" class="button_num" >6</div>
+            <div style="float: left" class="button_op" >*</div>
+            <div style="clear:both"></div>
+          </div>
+
+          <div>
+            <div style="float: left" class="button_num" >1</div>
+            <div style="float: left" class="button_num" >2</div>
+            <div style="float: left" class="button_num" >3</div>
+            <div style="float: left" class="button_op" >*</div>
+            <div style="clear:both"></div>
+          </div>
+
+          <div>
+            <div style="float: left" class="button_op" >=</div>
+            <div style="float: left" class="button_op" >-</div>
+            <div style="float: left" class="button_op" >+</div>
+            <div style="float: left" class="clear">C</div>
+            <div style="clear:both"></div>
+          </div>
+
+        </div>
+    </div>
+    <script>
+      // custom config for the MTW app 
+      const mtwAppConfig = {
+          border: true // app border in the MTW page                    
+      }
+
+      ///////////////////////////////////////////////////////
+      // implement this functions in order to use private API        
+      const sendPrivateApiRequest = async () => {
+          // your code here:
+          // sendRequestToParent({ cat: 'getAssets' })
+      }        
+
+      const acceptPrivateApiResponse = async (data) => {
+          // process received data here:
+          // console.log(data)
+      }
+
+      // use this in order to send on document load
+      document.addEventListener('DOMContentLoaded', () => {
+          // your code here:
+          //sendRequestToParent({ method: 'getAssets' })
+      })
+
+  </script>
+  <script src="https://morethanwallet.com/appstore/index.js"></script>
+  </body>
+</html>
